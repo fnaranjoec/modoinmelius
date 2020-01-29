@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MeliusApp.Views.LoginPage"
+             Title="Login"
+             WidthRequest="20"
+             Padding="20"
+             BackgroundColor="#2C3E50"             
+             >
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="50" VerticalOptions="Center">
+            <Label Text="Bienvenido a Melius!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                TextColor="White"
+                FontSize="Title"
+                   />
+
+            <!-- Label x:Name="lblUsuario" Text="Usuario" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" /-->
+            <Entry x:Name="TxtUsuario" Placeholder="Nombre de Usuario" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <!--Label x:Name="lblClave" Text="Clave" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/-->
+            <Entry x:Name="TxtClave" IsPassword="True"  Placeholder="Clave de Usuario" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Button x:Name="btnEntrar" Text="Entrar" Clicked="Login" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
